@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+}
+
+.star-container {
+    position: relative;
+    height: 100vh;
+}
+
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+input {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    animation: moveStar 5s linear infinite;
+}
+
+@keyframes moveStar {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}
